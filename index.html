@@ -4,36 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<style>
-    .orange{
-        width: 50px;
-        height: 50px;
-        background: orange;
-    }
-</style>
+
 <body>
-    <div id="progress">
-        <div id="progressText"></div>
-        <a class="button orange" ani_type="fade">fade</a>
+    <div class="progress">
+        <div class="progressText"></div>
+        <!-- <a class="button orange" ani_type="fade">fade</a> -->
     </div>
-    
-    <script>
-        window.onload = function progress(){
-         let progrsText = document.getElementById('progressText');
-         let num = 1;   // 1부터 시작
-         let per = setInterval(frame, 15);  
-         function frame(){
-             if(num >= 100){
-                 clearInterval(per);
-             }else{
-                 num ++;
-                 progrsText.innerHTML = num + '%';
-             }
-            }
-         }
-         
-    </script>
+
+    <script src="app.js"></script>
 </body>
 </html>
